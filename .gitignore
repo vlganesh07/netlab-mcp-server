@@ -1,0 +1,18 @@
+# Credentials — never commit these
+.env
+*.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.Python
+
+# Generated state dumps — these are point-in-time snapshots, not source
+state_dump_*.json
+
+# macOS
+.DS_Store
+
+# Claude Desktop scratch output in this folder
+Claude outputs/

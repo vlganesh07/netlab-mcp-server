@@ -1,0 +1,11 @@
+all:
+  children:
+    core_switches:
+      hosts:
+        CSW1:
+          ansible_host: 10.0.0.2
+      vars:
+        ansible_connection: ansible.netcommon.network_cli
+        ansible_network_os: cisco.ios.ios
+        ansible_user: "{{ lookup('env', 'NETLAB_USERNAME') }}"
+        ansible_password: "{{ lookup('env', 'NETLAB_PASSWORD') }}"

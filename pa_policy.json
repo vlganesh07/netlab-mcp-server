@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Inside_to_Outside",
+    "source": [
+      "any"
+    ],
+    "destination": [
+      "any"
+    ],
+    "action": "allow",
+    "fromzone": [
+      "trust"
+    ],
+    "tozone": [
+      "untrust"
+    ],
+    "application": [
+      "any"
+    ]
+  }
+]

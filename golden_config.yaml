@@ -1,0 +1,21 @@
+devices:
+  CSW1:
+    expected_vlans: [1, 10, 30, 40, 99]
+    excluded_svis: [Vlan1]
+    expected_portchannels:
+      - name: Po1
+        status: SU
+        members: [Te1/1/1, Te1/1/2]
+      - name: Po2
+        status: SU
+        members: [Te1/0/37, Te1/0/38]
+  CSW2:
+    expected_vlans: [1, 10, 50, 99]
+    excluded_svis: [Vlan1, Vlan50]
+    expected_portchannels:
+      - name: Po2
+        status: SU
+        members: [Te1/0/37, Te1/0/38]
+
+
+        

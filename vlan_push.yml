@@ -1,0 +1,10 @@
+- name: Ensure test VLAN present on core switch
+  hosts: CSW1
+  gather_facts: no
+  tasks:
+    - name: Configure VLAN 20 LAB_TEST
+      cisco.ios.ios_vlans:
+        config:
+          - vlan_id: 20
+            name: LAB_TEST
+        state: merged

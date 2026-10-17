@@ -1,0 +1,6 @@
+netmiko
+pan-os-python
+mcp
+python-dotenv
+PyYAML
+ansible
