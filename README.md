@@ -53,6 +53,3 @@ This is a personal lab project, not production-hardened code. It was built to le
 
 `push_vlan_config` is the only tool here that can change a live device. Rather than let an AI client just go do that, it defaults to a dry run, it reports exactly what it would push and changes nothing. The caller (a person, through their MCP client) has to see that dry run and explicitly pass `confirm=True` to make it real. That's a stand-in for a proper human-approval gate, not a substitute for one, treat it as a reminder to build real guardrails before giving an AI write access to anything that matters.
 
-## Background
-
-Written up here: [link to your LinkedIn post]
